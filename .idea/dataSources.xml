@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="e-nes.pl" uuid="ce705a09-af9e-4ce0-b601-36dc4f0e5504">
+      <driver-ref>mariadb</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://ftp.e-nes.pl:3306/authme</jdbc-url>
+    </data-source>
+  </component>
+</project>
