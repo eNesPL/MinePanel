@@ -97,6 +97,6 @@ function is_email_valid($email) {
 }
 
 ?>
-
+<!-- Gruby 2-->
 </body>
 </html>
