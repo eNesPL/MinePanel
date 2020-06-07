@@ -99,6 +99,8 @@ function is_email_valid($email) {
 ?>
 socialisci powinni wisiec zamiast lisci
 <-- dupa slonia -->
+<div id="Tomek"></div>
+TEst
 <-- dupa slonia -->
 Andrzej
 dudek
