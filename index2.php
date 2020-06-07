@@ -62,7 +62,7 @@ function process_login($user, $pass, AuthMeController $controller) {
     if ($controller->checkPassword($user, $pass)) {
         printf('<h1>Hello, %s!</h1>', htmlspecialchars($user));
         echo 'Successful login. Nice to have you back!'
-            . '<br /><a href="index.php">Back to form</a>';
+            . '<br /><a href="index2.php">Back to form</a>';
         return true;
     } else {
         echo '<h1>Error</h1> Invalid username or password.';
@@ -81,7 +81,7 @@ function process_register($user, $pass, $email, AuthMeController $controller) {
         $register_success = $controller->register($user, $pass, $email);
         if ($register_success) {
             printf('<h1>Welcome, %s!</h1>Thanks for registering', htmlspecialchars($user));
-            echo '<br /><a href="index.php">Back to form</a>';
+            echo '<br /><a href="index2.php">Back to form</a>';
             return true;
         } else {
             echo '<h1>Error</h1>Unfortunately, there was an error during the registration.';
