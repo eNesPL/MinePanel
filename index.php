@@ -97,10 +97,7 @@ function is_email_valid($email) {
 }
 
 ?>
-<!-- Test-->
-<!--
-Test
-
--->
+<-- dupa slonia -->
+<-- dupa slonia -->
 </body>
 </html>
