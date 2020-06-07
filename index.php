@@ -99,6 +99,7 @@ function is_email_valid($email) {
 ?>
 <-- dupa slonia -->
 <div id="Tomek"></div>
+TEst
 <-- dupa slonia -->
 </body>
 </html>
