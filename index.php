@@ -97,7 +97,10 @@ function is_email_valid($email) {
 }
 
 ?>
+socialisci powinni wisiec zamiast lisci
 <-- dupa slonia -->
 <-- dupa slonia -->
+Andrzej
+dudek
 </body>
 </html>
