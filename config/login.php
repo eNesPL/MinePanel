@@ -32,7 +32,9 @@ if($action === "Wyloguj"){
 if (!$was_successful) {
     $_SESSION['error'] = 'Logowanie nie udane';
     $_SESSION['loged']=0;
-    $_SESSION['login']=0;
+    $_SESSION['login']="";
+    session_unset();
+    session_destroy();
 
 }
 header('Location: ' . $_SERVER['HTTP_REFERER']);
