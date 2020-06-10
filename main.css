@@ -32,12 +32,14 @@ body
     top: 0;
     border-radius: 3px;
     box-sizing: border-box;
+    text-align: center;
 }
 ol
 {
     width: 90%;
-    margin: 0 auto;
+    margin: auto;
     padding: 5px 10px;
+    text-align: center;
     list-style-type: none;
     display: block;
 }
