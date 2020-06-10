@@ -19,7 +19,6 @@
             <li><a href="#">Nowości</a></li>
             <li><a href="#">Panel Gracza</a></li>
             <li><a href="#">Receptury</a></li>
-            <li><a href="#">O nas</a></li>
             <li><a href="#">Kontakt</a></li>
         </ol>
     </div>
