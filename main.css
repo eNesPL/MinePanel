@@ -27,39 +27,39 @@ body
     padding: 4px 3px;
     margin: 7px auto;
     background-color: #404040;
-    color: #dddddd;
     position: sticky;
     top: 0;
-    border-radius: 3px;
-    box-sizing: border-box;
-    text-align: center;
+    border-radius: 6px;
 }
 ol
 {
-    width: 70%;
-    margin: auto;
-    padding: 5px 10px;
-    text-align: center;
+    padding: 0;
+    margin: 0;
     list-style-type: none;
+    color: #dddddd;
+    display: inline-block;
+}
+ol  > li:first-child
+{
+    border-left: 1px solid #dddddd;
+}
+ol a
+{
+    color: #dddddd;
+    text-decoration: none;
     display: block;
 }
-li
+ol > li
 {
-    width: 12%;
-    margin: 0 5px;
     float: left;
+    width: 150px;
+    height: 30px;
+    padding: 5px 0;
     text-align: center;
 }
-li a
+ol > li:hover
 {
-    color: #dddddd;
-    text-decoration: none;
-}
-li a:hover
-{
-    color: #dddddd;
     font-weight: bold;
-    text-decoration: none;
 }
 .container
 {
