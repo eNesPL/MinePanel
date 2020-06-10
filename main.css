@@ -16,52 +16,51 @@ body
 {
     width: auto;
     height: auto;
-    margin: 15px auto;
-    padding: 25px 0;
+    margin: 25px auto;
+    padding: 40px 0;
     text-align: center;
 }
 .nav
 {
-    width: 80%;
+    width: 70%;
     height: auto;
     padding: 4px 3px;
     margin: 7px auto;
     background-color: #404040;
+    color: #dddddd;
     position: sticky;
     top: 0;
-    border-radius: 6px;
+    border-radius: 3px;
 }
 ol
 {
-    padding: 0 15px;
-    margin: 5px 20px;
+    width: 90%;
+    margin: auto;
+    padding: 5px 20px;
     list-style-type: none;
-    color: #dddddd;
-    display: inline-block;
-}
-ol a
-{
-    color: #dddddd;
-    text-decoration: none;
     display: block;
 }
-ol > li
+li
 {
+    width: 20%;
+    margin: 0 28px;
     float: left;
-    width: 15%;
-    height: auto;
-    padding: 5px 15px;
     text-align: center;
 }
-ol > li:hover
+li a
 {
     color: #dddddd;
     text-decoration: none;
+}
+li a:hover
+{
+    color: #dddddd;
     font-weight: bold;
+    text-decoration: none;
 }
 .container
 {
-    width: 90%;
+    width: 80%;
     height: auto;
     margin-top: 45px;
 }
