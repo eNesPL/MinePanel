@@ -60,7 +60,7 @@
                 <form action="config/login.php" method="post">
                 <input type="text" id="login" name="username" placeholder="Login" required><br/>
                 <input type="password" id="haslo"  name="password" placeholder="Hasło" required><br/>
-                <input type="submit" name="action" value="Log in" /><br/>
+                <input type="submit" name="action" value="Zaloguj" /><br/>
                 <a class="zaphaslo" href="#"> Zapomniałeś hasła ?</a>
             </div>
             </form>
@@ -70,7 +70,7 @@
                 echo 'zalogowano';
                 echo ' witaj '.$_SESSION['login'];
                 echo '<form action="config/login.php" method="post">
-                         <input type="submit" name="action" value="Log Out" />
+                         <input type="submit" name="action" value="Wyloguj" />
                         </form>
 ';
             }
