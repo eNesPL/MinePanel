@@ -26,16 +26,17 @@ body
     height: auto;
     padding: 4px 3px;
     margin: 7px auto;
-    background-color: #4d4d4d;
-    color: #f2f2f2;
+    background-color: #404040;
+    color: #dddddd;
     position: sticky;
     top: 0;
+    border-radius: 3px;
 }
 ol
 {
     width: 90%;
     margin: auto;
-    padding: 5px 10px;
+    padding: 5px 20px;
     list-style-type: none;
     display: block;
 }
@@ -48,14 +49,14 @@ li
 }
 li a
 {
+    color: #dddddd;
     text-decoration: none;
 }
 li a:hover
 {
-    background-color: #8c8c8c;
-    color: #0d0d0d;
+    color: #dddddd;
+    font-weight: bold;
     text-decoration: none;
-    display: block;
 }
 .container
 {
