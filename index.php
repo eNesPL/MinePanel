@@ -25,6 +25,13 @@
         <div class="main">
             <div class="article">
                 <div class="img">Tytuł</div>
+                <?php
+
+                echo isset($_SESSION['loged']);
+                echo $_SESSION['loged'];
+                echo $_SESSION['login'];
+
+                ?>
             </div>
             <div class="article">
                 <div class="img">Tytuł</div>
@@ -39,9 +46,6 @@
         <div class="right">
             <div class="logowanie">
                 <?php
-                echo isset($_SESSION['loged']);
-                echo $_SESSION['loged'];
-                echo $_SESSION['login'];
                 if(!isset($_SESSION['loged']) || $_SESSION['loged']=0 || $_SESSION['login']==""){
                 echo '
                 <form action="config/login.php" method="post">
