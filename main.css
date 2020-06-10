@@ -33,7 +33,7 @@ body
 }
 ol
 {
-    padding: 0;
+    padding: 0 15px;
     margin: auto;
     list-style-type: none;
     color: #dddddd;
@@ -55,6 +55,8 @@ ol > li
 }
 ol > li:hover
 {
+    color: #dddddd;
+    text-decoration: none;
     font-weight: bold;
 }
 .container
