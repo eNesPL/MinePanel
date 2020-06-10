@@ -55,6 +55,7 @@
         <div class="container">
 <<<<<<< HEAD
             <?php
+            echo $_SESSION['login'];
             if(!isset($_SESSION['loged']) || $_SESSION['loged']=0 || $_SESSION['login']==""){
                 echo '<div class="logowanie">
                    <form action="config/login.php" method="post">
