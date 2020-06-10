@@ -21,6 +21,7 @@ $was_successful = false;
 if ($action && $user && $pass) {
     if ($action === 'Zaloguj') {
         $was_successful = process_login($user, $pass, $authme_controller);
+        echo $was_successful;
     }
 }
 if($action === "Wyloguj"){
@@ -35,7 +36,7 @@ if (!$was_successful) {
     $_SESSION['login']=0;
 
 }
-header('Location: ' . $_SERVER['HTTP_REFERER']);
+//header('Location: ' . $_SERVER['HTTP_REFERER']);
 exit();
 function get_from_post_or_empty($index_name) {
     return trim(
