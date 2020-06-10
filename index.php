@@ -10,9 +10,18 @@
 </head>
 <body>
 <div class="wrapper">
-        <div class="logo">
-            <img src="img/logo.png" alt="Logo">
-        </div>
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo">
+    </div>
+    <div class="nav">
+        <ol>
+            <li class="col-1"><a href="#">Text1</a></li>
+            <li class="col-1"><a href="#">Text2</a></li>
+            <li class="col-1"><a href="#">Text3</a></li>
+            <li class="col-1"><a href="#">Text4</a></li>
+            <li class="col-1"><a href="#">Text5</a></li>
+        </ol>
+    </div>
 </div>
 </body>
 </html>

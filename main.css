@@ -1,20 +1,60 @@
 body
 {
-    background-image: url("img/background.jpg");
     font-family: 'Lato', sans-serif;
     font-size: 20px;
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 .wrapper
 {
     width: 100%;
-    height: auto;
+    height: 2000px;
 }
 .logo
 {
-    width: 70%;
+    width: 80%;
     height: auto;
     background-color: #dddddd;
     margin: 25px auto;
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
+}
+.nav
+{
+    width: 70%;
+    height: auto;
+    padding: 5px 0;
+    margin: 10px auto;
+    background-color: #1d2124;
+    color: #dddddd;
+    position: sticky;
+    top: 10px;
+}
+ol
+{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #404040;
+    border: 1px solid yellow;
+}
+li
+{
+    border: 1px solid red;
+    float: left;
+    color: white;
+    margin: 0 50px;
+    text-align: center;
+    padding: 5px 20px;
+}
+li a
+{
+    color: #dddddd;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+    text-decoration: none;
 }
