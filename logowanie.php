@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <?php session_start();?>
+=======
+>>>>>>> origin/master
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -27,6 +30,10 @@
             <li><a href="logowanie.php">Logowanie</a></li><!-- Potem Panel Gracza-->
             <li><a href="rules.php">Regulamin</a></li>
             <li><a href="world.php">Opis Świata</a></li>
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
             <li><a href="kontakt.php">Kontakt</a>
             </li>
         </ol>
@@ -46,6 +53,7 @@
     </div>
     <div class="wrapper">
         <div class="container">
+<<<<<<< HEAD
             <?php
             if(!isset($_SESSION['loged']) || $_SESSION['loged']=0 || $_SESSION['login']==""){
                 echo '<div class="logowanie">
@@ -69,6 +77,20 @@
 ';
             }
             ?>
+=======
+            <div class="logowanie">
+                <input type="text" id="login" placeholder="Login" required><br/>
+                <input type="password" id="haslo" placeholder="Hasło" required><br/>
+
+                <input type="submit" value="Zaloguj"><br/>
+                <a class="zaphaslo" href="#"> Zapomniałeś hasła ?</a>
+            </div>
+            <!-- -->
+
+            <input >
+
+
+>>>>>>> origin/master
         </div>
 
     </div>
@@ -76,4 +98,8 @@
         <a class="link" href="kontakt.php"> e-Nes.pl/MinePanel</a>   Wszelkie prawa zastrzeżone.
     </div>
 </body>
+<<<<<<< HEAD
 </html>``
+=======
+</html>
+>>>>>>> origin/master

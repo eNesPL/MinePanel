@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="e-nes.pl" preserveTimestamps="false" showDifferentInSync="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="eNes" preserveTimestamps="false" showDifferentInSync="false">
     <serverData>
-      <paths name="e-nes.pl">
+      <paths name="eNes">
         <serverdata>
           <mappings>
             <mapping deploy="/minepanel" local="$PROJECT_DIR$" web="/" />
@@ -10,5 +10,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>
