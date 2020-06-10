@@ -1,4 +1,147 @@
 body
 {
-    background-color: #404040;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.wrapper
+{
+    width: 100%;
+    height: 2000px;
+}
+.logo
+{
+    width: auto;
+    height: auto;
+    margin: 25px auto;
+    padding: 40px 0;
+    text-align: center;
+}
+.nav
+{
+    width: 70%;
+    height: auto;
+    padding: 4px 3px;
+    margin: 7px auto;
+    background-color: #1d2124;
+    color: #dddddd;
+    position: sticky;
+    top: 0;
+}
+ol
+{
+    width: 90%;
+    margin: auto;
+    padding: 5px 10px;
+    list-style-type: none;
+    border: 1px solid yellow;
+}
+li
+{
+    border: 1px solid red;
+    width: 20%;
+    margin: 0 28px;
+    float: left;
+    color: white;
+    text-align: center;
+}
+li a
+{
+    color: #ddd;
+    text-decoration: none;
+}
+li a:hover
+{
+    background-color: #111;
+    color: #d1ecf1;
+    text-decoration: none;
+    display: block;
+}
+.container
+{
+    width: 80%;
+    height: auto;
+    margin-top: 45px;
+}
+.main
+{
+    width: 65%;
+    height: 1200px;
+    background-color: #0056b3;
+    float: left;
+}
+.right
+{
+    width: 33%;
+    margin-left: 2%;
+    height: auto;
+    background-color: #0b2e13;
+    float: left;
+}
+.logowanie
+{
+    margin: 35px auto;
+    width: 85%;
+    height: 300px;
+    background-color: #d1ecf1;
+    border-radius: 5px;
+}
+.input
+{
+    width: 80%;
+    height: auto;
+    margin: 12px 10%;
+    text-align: center;
+}
+.input:first-child
+{
+    margin-top: 50px;
+}
+.txt
+{
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+.ranking
+{
+    margin: 50px auto;
+    width: 85%;
+    height: auto;
+    background-color: #d1ecf1;
+    border-radius: 5px;
+    display: block;
+}
+.rankighead
+{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    background-color: #1c7430;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+.pozrank
+{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid black;
+}
+.article
+{
+    margin: 45px auto;
+    width: 80%;
+    height: 400px;
+    background-color: white;
+}
+.img
+{
+    background-color: red;
+    width: 100%;
+    height: 70px;
 }
