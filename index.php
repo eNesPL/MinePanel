@@ -11,7 +11,7 @@
 <body>
 <div class="wrapper">
     <div class="logo">
-        <img src="img/logo.png" alt="Logo">
+        <a href="index.php"><img src="img/logo.png" alt="Logo"></a>
     </div>
     <div class="nav">
         <ol>
@@ -38,16 +38,18 @@
         </div>
         <div class="right">
             <div class="logowanie">
+
                 <?php
                 if(!isset($_SESSION['loged']) || $_SESSION['loged']=0 || $_SESSION['login']==""){
-                    echo '<div class="logowanie">
-                    <form action="config/login.php" method="post">
+                    echo '<form action="config/login.php" method="post">
                     <input class="input" name="username" type="text" placeholder="Login"><br/>
                     <input class="input" name="password" type="password" placeholder="Hasło"><br/>
                     <input class="input" type="submit" value="Zaloguj"><br/>
                     <div class="txt"><a href="#">Zapomniałeś hasła ?</a></div>
                     </form>
-                ';}?>
+';
+                }
+                ?>
                 <?php
                 if(isset($_SESSION['login']) && $_SESSION['loged']=1){
                     echo 'zalogowano';
