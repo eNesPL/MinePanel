@@ -26,8 +26,8 @@ body
     height: auto;
     padding: 4px 3px;
     margin: 7px auto;
-    background-color: #e6e6e6;
-    color: #262626;
+    background-color: #4d4d4d;
+    color: #f2f2f2;
     position: sticky;
     top: 0;
 }
@@ -44,17 +44,10 @@ li
     width: 20%;
     margin: 0 28px;
     float: left;
-    color: #262626;
     text-align: center;
-    border-right: 1px solod #1d2124;
-}
-li:first-child
-{
-    border-left: 1px solod #1d2124;
 }
 li a
 {
-    color: #262626;
     text-decoration: none;
 }
 li a:hover
