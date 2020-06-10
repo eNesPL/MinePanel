@@ -1,78 +1,18 @@
 body
 {
-    background-color: #202020;
+    background-image: url("img/background.jpg");
     font-family: 'Lato', sans-serif;
+    font-size: 20px;
 }
 .wrapper
 {
-
+    width: 100%;
+    height: auto;
 }
-.logo
+.container
 {
-    width: 80%;
-    height: 250px;
-    margin: 0 auto 0 auto;
-    text-align: center;
-    background-color: #cccccc;
-    position: relative;
-}
-.block1
-{
-    position: absolute;
-    left: 30%;
-    top: 25%;
-}
-.block2
-{
-    position: absolute;
-    left: 45%;
-    top: 10%;
-}
-.h1
-{
-    font-size: 52px;
-    font-weight: 700;
-}
-.h5
-{
-    font-size: 25px;
-    font-weight: 400;
-}
-.menu
-{
-    width: 80%;
-    height: 250px;
-    margin: 0 auto;
-    background-color: #bbbbbb;
-}
-.nav
-{
-    background-color: yellow;
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    position: static;
-
-}
-
-.nav li
-{
-    display: inline-block;
-    font-size: 20px;
-    padding: 20px;
-}
-.main
-{
-    width: 80%;
-    height: 250px;
-    margin: 0 auto;
-    background-color: #aaaaaa;
-}
-.footer
-{
-    width: 80%;
-    height: 250px;
-    margin: 0 auto;
-    background-color: #999999;
+    width: 75vw;
+    height: 80vh;
+    background-color: #dddddd;
+    opacity: .7;
 }
