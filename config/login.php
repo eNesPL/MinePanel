@@ -19,13 +19,11 @@ $pass = get_from_post_or_empty('password');
 $email = get_from_post_or_empty('email');
 $was_successful = false;
 if ($action && $user && $pass) {
-    if ($action === 'Log in') {
+    if ($action === 'Zaloguj') {
         $was_successful = process_login($user, $pass, $authme_controller);
-    } else if ($action === 'Register') {
-        $was_successful = process_register($user, $pass, $email, $authme_controller);
     }
 }
-if($action === "Log Out"){
+if($action === "Wyloguj"){
     session_unset();
     session_destroy();
 }
@@ -34,9 +32,11 @@ if($action === "Log Out"){
 if (!$was_successful) {
     $_SESSION['error'] = 'Logowanie nie udane';
     $_SESSION['loged']=0;
+    $_SESSION['login']=0;
 
 }
-header('Location:/minepanel/logowanie.php');
+header('Location: ' . $_SERVER['HTTP_REFERER']);
+exit();
 function get_from_post_or_empty($index_name) {
     return trim(
         filter_input(INPUT_POST, $index_name, FILTER_UNSAFE_RAW, FILTER_REQUIRE_SCALAR | FILTER_FLAG_STRIP_LOW)

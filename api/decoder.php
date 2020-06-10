@@ -6,4 +6,8 @@ $row = mysqli_fetch_array($result);
 
     $string = base64_decode($row[0]);
     echo $string;
+    $txt[]=$string.explode("");
+    foreach($txt as $var){
+        echo $var;
+}
 
