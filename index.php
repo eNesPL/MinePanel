@@ -11,13 +11,7 @@
 <body>
 <div class="wrapper">
         <div class="logo">
-            <img src="img/logo.png">
-        </div>
-        <div class="nav">
-
-        </div>
-        <div class="container">
-
+            <img src="img/logo.png" alt="Logo">
         </div>
 </div>
 </body>

@@ -9,10 +9,12 @@ body
     width: 100%;
     height: auto;
 }
-.container
+.logo
 {
-    width: 75vw;
-    height: 80vh;
+    width: 70%;
+    height: auto;
     background-color: #dddddd;
-    opacity: .7;
+    margin: 25px auto;
+    padding: 20px 0;
+    text-align: center;
 }
