@@ -40,8 +40,7 @@
             <div class="logowanie">
                 <?php
                 if(!isset($_SESSION['loged']) || $_SESSION['loged']=0 || $_SESSION['login']==""){
-                    echo '<div class="logowanie">
-                    <form action="config/login.php" method="post">
+                    echo '<form action="config/login.php" method="post">
                     <input class="input" name="username" type="text" placeholder="Login"><br/>
                     <input class="input" name="password" type="password" placeholder="Hasło"><br/>
                     <input class="input" type="submit" value="Zaloguj"><br/>
@@ -55,7 +54,9 @@
                     echo '<form action="config/login.php" method="post">
                     <input type="submit" name="action" value="Log Out" />
                     </form>
-                ';}?>
+                ';
+                }
+                ?>
             </div>
             <div class="ranking">
                 <div class="rankighead"><h1>Top 5 Graczy</h1></div>

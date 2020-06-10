@@ -57,10 +57,10 @@
             <?php
             if(!isset($_SESSION['loged']) || $_SESSION['loged']=0 || $_SESSION['login']==""){
                 echo '<div class="logowanie">
-                   <form action="config/login.php" method="post">
+                <form action="config/login.php" method="post">
                 <input type="text" id="login" name="username" placeholder="Login" required><br/>
                 <input type="password" id="haslo"  name="password" placeholder="Hasło" required><br/>
-              <input type="submit" name="action" value="Log in" /><br/>
+                <input type="submit" name="action" value="Log in" /><br/>
                 <a class="zaphaslo" href="#"> Zapomniałeś hasła ?</a>
             </div>
             </form>
@@ -72,7 +72,6 @@
                 echo '<form action="config/login.php" method="post">
                          <input type="submit" name="action" value="Log Out" />
                         </form>
-
 ';
             }
             ?>
