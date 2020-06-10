@@ -60,7 +60,6 @@
                    <form action="config/login.php" method="post">
                 <input type="text" id="login" name="username" placeholder="Login" required><br/>
                 <input type="password" id="haslo"  name="password" placeholder="Hasło" required><br/>
-
               <input type="submit" name="action" value="Log in" /><br/>
                 <a class="zaphaslo" href="#"> Zapomniałeś hasła ?</a>
             </div>
