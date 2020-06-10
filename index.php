@@ -40,6 +40,7 @@
             <div class="logowanie">
                 <?php
                 if(!isset($_SESSION['loged']) || $_SESSION['loged']=0 || $_SESSION['login']==""){
+                    echo 'niezalogowany';
                     echo '<form action="config/login.php" method="post">
                     <input class="input" name="username" type="text" placeholder="Login"><br/>
                     <input class="input" name="password" type="password" placeholder="Hasło"><br/>
