@@ -35,7 +35,7 @@ if (!$was_successful) {
     $_SESSION['login']=0;
 
 }
-echo $was_successful;
+header('Location: ' . $_SERVER['HTTP_REFERER']);
 function get_from_post_or_empty($index_name) {
     return trim(
         filter_input(INPUT_POST, $index_name, FILTER_UNSAFE_RAW, FILTER_REQUIRE_SCALAR | FILTER_FLAG_STRIP_LOW)

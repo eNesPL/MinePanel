@@ -44,7 +44,7 @@
                 <form action="config/login.php" method="post">
                 <input class="input" type="text" name="username" placeholder="Login"><br/>
                 <input class="input" type="password" name="password" placeholder="Hasło"><br/>
-                <input class="input" type="submit" value="Zaloguj"><br/>
+                <input class="input" type="submit" name="action" value="Zaloguj"><br/>
                 </form>
                 <div class="txt"><a href="#">Zapomniałeś hasła ?</a></div>
           
@@ -54,7 +54,7 @@
 
                 echo "Witaj ".$_SESSION['login'];
                 echo ' <form action="config/login.php" method="post">
-                    <input class="input" type="submit" value="Wyloguj"><br/>
+                    <input class="input" type="submit" name="action" value="Wyloguj"><br/>
                     </form>
  ';
             }
