@@ -19,13 +19,11 @@ $pass = get_from_post_or_empty('password');
 $email = get_from_post_or_empty('email');
 $was_successful = false;
 if ($action && $user && $pass) {
-    if ($action === 'Log in') {
+    if ($action === 'Zaloguj') {
         $was_successful = process_login($user, $pass, $authme_controller);
-    } else if ($action === 'Register') {
-        $was_successful = process_register($user, $pass, $email, $authme_controller);
     }
 }
-if($action === "Log Out"){
+if($action === "Wyloguj"){
     session_unset();
     session_destroy();
 }
