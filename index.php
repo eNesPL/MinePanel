@@ -45,11 +45,11 @@
             </div>
             <div class="ranking">
                 <div class="rankighead"><h1>Top 5 Graczy</h1></div>
-                <div class="pozrank">Test1</div>
-                <div class="pozrank">Test2</div>
-                <div class="pozrank">Test3</div>
-                <div class="pozrank">Test4</div>
-                <div class="pozrank">Test5</div>
+                <div class="pozrank">Test11</div>
+                <div class="pozrank">Test21</div>
+                <div class="pozrank">Test31</div>
+                <div class="pozrank">Test41</div>
+                <div class="pozrank">Test51</div>
             </div>
             <div class="ranking">
                 <div class="rankighead"><h1>Top 5 Online</h1></div>
