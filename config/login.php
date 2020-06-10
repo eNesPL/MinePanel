@@ -19,10 +19,9 @@ $pass = get_from_post_or_empty('password');
 $email = get_from_post_or_empty('email');
 $was_successful = false;
 if ($action && $user && $pass) {
-    echo "if1";
     if ($action === 'Zaloguj') {
-        echo "zalo";
         $was_successful = process_login($user, $pass, $authme_controller);
+        echo $_SESSION['login'];
     }
 }
 if($action === "Wyloguj"){
