@@ -33,7 +33,7 @@
                 <div class="img">Tytuł</div>
             </div>
             <div class="article">
-                <div class="img">Tytuł</div>
+                <div class="img">TITLE</div>
             </div>
         </div>
         <div class="right">
