@@ -15,10 +15,10 @@
     </div>
     <div class="nav">
         <ol>
-            <li><a href="#">Text1</a></li>
-            <li><a href="#">Text2</a></li>
-            <li><a href="#">Text3</a></li>
-            <li><a href="#">Text4</a></li>
+            <li><a href="#">Nowości</a></li>
+            <li><a href="#">Panel Gracza</a></li>
+            <li><a href="#">O nas</a></li>
+            <li><a href="#">Kontakt</a></li>
         </ol>
     </div>
     <div class="container">

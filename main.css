@@ -46,6 +46,11 @@ li
     float: left;
     color: #262626;
     text-align: center;
+    border-right: 1px solod #1d2124;
+}
+li:first-child
+{
+    border-left: 1px solod #1d2124;
 }
 li a
 {
