@@ -51,14 +51,11 @@
                 <?php
                 if(isset($_SESSION['login']) && $_SESSION['loged']=1){
                     echo 'zalogowano';
-                    echo ' witaj '.$_SESSION['login'];
+                    echo ' Zalogowany '.$_SESSION['login'];
                     echo '<form action="config/login.php" method="post">
-                         <input type="submit" name="action" value="Log Out" />
-                        </form>
-
-';
-                }
-                ?>
+                    <input type="submit" name="action" value="Log Out" />
+                    </form>
+                ';}?>
             </div>
             <div class="ranking">
                 <div class="rankighead"><h1>Top 5 Graczy</h1></div>
