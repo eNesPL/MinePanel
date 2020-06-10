@@ -15,12 +15,52 @@
     </div>
     <div class="nav">
         <ol>
-            <li class="col-1"><a href="#">Text1</a></li>
-            <li class="col-1"><a href="#">Text2</a></li>
-            <li class="col-1"><a href="#">Text3</a></li>
-            <li class="col-1"><a href="#">Text4</a></li>
-            <li class="col-1"><a href="#">Text5</a></li>
+            <li><a href="#">Text1</a></li>
+            <li><a href="#">Text2</a></li>
+            <li><a href="#">Text3</a></li>
+            <li><a href="#">Text4</a></li>
         </ol>
+    </div>
+    <div class="container">
+        <div class="main">
+            <div class="article">
+                <div class="img">Tytuł</div>
+            </div>
+            <div class="article">
+                <div class="img">Tytuł</div>
+            </div>
+            <div class="article">
+                <div class="img">Tytuł</div>
+            </div>
+            <div class="article">
+                <div class="img">Tytuł</div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="logowanie">
+                <input class="input" type="text" placeholder="Login"><br/>
+                <input class="input" type="password" placeholder="Hasło"><br/>
+                <input class="input" type="submit" value="Zaloguj"><br/>
+                <div class="txt"><a href="#">Zapomniałeś hasła ?</a></div>
+            </div>
+            <div class="ranking">
+                <div class="rankighead"><h1>Top 5 Graczy</h1></div>
+                <div class="pozrank">Test1</div>
+                <div class="pozrank">Test2</div>
+                <div class="pozrank">Test3</div>
+                <div class="pozrank">Test4</div>
+                <div class="pozrank">Test5</div>
+            </div>
+            <div class="ranking">
+                <div class="rankighead"><h1>Top 5 Online</h1></div>
+                <div class="pozrank">Test1</div>
+                <div class="pozrank">Test2</div>
+                <div class="pozrank">Test3</div>
+                <div class="pozrank">Test4</div>
+                <div class="pozrank">Test5</div>
+            </div>
+        </div>
+        <div style="clear: both"></div>
     </div>
 </div>
 </body>
