@@ -33,15 +33,11 @@ body
 }
 ol
 {
-    padding: 5px;
+    padding: 0;
     margin: auto;
     list-style-type: none;
     color: #dddddd;
     display: inline-block;
-}
-ol  > li:first-child
-{
-    border-left: 1px solid #dddddd;
 }
 ol a
 {
@@ -52,8 +48,8 @@ ol a
 ol > li
 {
     float: left;
-    width: 150px;
-    height: 30px;
+    width: 15%;
+    height: auto;
     padding: 5px 0;
     text-align: center;
 }
