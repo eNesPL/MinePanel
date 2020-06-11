@@ -20,15 +20,14 @@ body
 }
 .nav
 {
-    width: 70%;
+    width: 95%;
     height: auto;
-    padding: 4px 3px;
-    margin: 7px auto;
+    padding: 7px 5px;
     background-color: #dddddd;
     color: #202020;
     position: sticky;
     top: 0;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 ol
 {
@@ -40,7 +39,7 @@ ol
 }
 li
 {
-    width: 20%;
+    width: 15%;
     margin: 0 28px;
     float: left;
     text-align: center;
