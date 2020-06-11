@@ -7,7 +7,7 @@ $row = mysqli_fetch_array($result);
     $string = base64_decode($row[0]);
     echo $string;
     $txt[]=explode("",$string);
-    foreach($txt as $var){
-        echo $var[0]. '<Br>';
+    for($i =0;$i<sizeof($txt);$i++){
+        echo $txt[$i].'<br>';
 }
 
