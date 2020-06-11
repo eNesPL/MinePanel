@@ -21,6 +21,7 @@
             <li><a href="#">Receptury</a></li>
             <li><a href="#">Kontakt</a></li>
         </ol>
+        <div style="clear: both"></div>
     </div>
     <div class="container">
         <div class="main">
