@@ -1,5 +1,6 @@
 <?php session_start();
 include("./api/api.php");
+include("./config/sesja.php");
 ?>
 <!DOCTYPE html>
 <html lang="pl">
