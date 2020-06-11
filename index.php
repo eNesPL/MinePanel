@@ -39,7 +39,6 @@
         </div>
         <div class="right">
             <div class="logowanie">
-
                 <?php
                 if(!isset($_SESSION['loged']) || $_SESSION['loged']=0 || $_SESSION['login']==""){
                 echo '
@@ -53,7 +52,6 @@
             ';}?>
             <?php
             if(isset($_SESSION['login']) && $_SESSION['loged']=1){
-
                 echo "Witaj ".$_SESSION['login'];
                 echo ' <form action="config/login.php" method="post">
                     <input class="input" type="submit" name="action" value="Wyloguj"><br/>
