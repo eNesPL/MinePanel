@@ -1,4 +1,6 @@
-<?php session_start();?>
+<?php session_start();
+include("./api/api.php");
+?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -72,11 +74,11 @@
             </div>
             <div class="ranking">
                 <div class="rankighead"><h1>Gracze onlie</h1></div>
-                <?
+                <?php
                 $arr = getOnline($conn);
                 foreach($arr as $nick){?>
                     <div class="pozrank"><?echo $nick['username']?></div>
-                <?
+                <?php
                 }
                 ?>
             </div>
