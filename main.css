@@ -20,7 +20,7 @@ body
 }
 .menu
 {
-    width: 95%;
+    width: 90%;
     height: auto;
     padding: 7px 5px;
     background-color: #dddddd;
@@ -57,7 +57,7 @@ li a:hover
 }
 .kontener
 {
-    width: 100%;
+    width: 90%;
     height: auto;
     margin-top: 50px;
 }
