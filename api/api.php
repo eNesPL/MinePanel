@@ -9,12 +9,12 @@ function getOnline($conn){
     $sql='select username from authme.authme where isLogged = 1';
 
         $result = mysqli_query($conn, $sql);
-        $row = mysqli_fetch_array($result);
-        return $row;
+        return $result;
 }
 $arr = getOnline($conn);
 foreach($arr as $nick){
-    echo $nick;
+    echo 'username: '.$nick['username']."<br>";
+    echo 'nick: '.$nick."<br>";
 }
 ?>
 <html>
