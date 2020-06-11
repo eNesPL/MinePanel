@@ -1,6 +1,9 @@
 <?php session_start();
 include("./api/api.php");
 include("./config/sesja.php");
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 ?>
 <!DOCTYPE html>
 <html lang="pl">
@@ -78,7 +81,7 @@ include("./config/sesja.php");
                 <?php
                 $arr = getOnline($conn);
                 foreach($arr as $nick){?>
-                    <div class="pozrank"><?echo $nick['username']?></div>
+                    <div class="pozrank"><?php echo $nick['username'] ?></div>
                 <?php
                 }
                 ?>
