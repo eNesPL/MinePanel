@@ -18,17 +18,16 @@ include("./config/sesja.php");
     <div class="logo">
         <a href="index.php"><img src="img/logo.png" alt="Logo"></a>
     </div>
-    <div class="menu">
+    <div class="nav">
         <ol>
             <li><a href="#">Nowości</a></li>
             <li><a href="#">Panel Gracza</a></li>
             <li><a href="#">Receptury</a></li>
-            <li><a href="#">O nas</a></li>
             <li><a href="#">Kontakt</a></li>
         </ol>
+        <div style="clear: both"></div>
     </div>
-</div>
-    <div class="kontener">
+    <div class="container">
         <div class="main">
             <div class="article">
                 <div class="img">Tytuł</div>
@@ -58,14 +57,13 @@ include("./config/sesja.php");
             ';}?>
             <?php
             if(isset($_SESSION['login']) && $_SESSION['loged']=1){
-                ?>
-                    Witaj <? echo getName()?>
-                    Ostatnio online: <? echo getLastLogin(getName(),$conn);?>
-                    <form action="config/login.php" method="post">
+                echo "Witaj ".getName();
+                echo "Ostatnio online:".getLastLogin(getName(),$conn);
+                echo ' <form action="config/login.php" method="post">
                     <input class="input" type="submit" name="action" value="Wyloguj"><br/>
                     </form>
 
-<?
+';
                 }
                 ?>
             </div>
@@ -91,6 +89,6 @@ include("./config/sesja.php");
         </div>
         <div style="clear: both"></div>
     </div>
-
+</div>
 </body>
 </html>
