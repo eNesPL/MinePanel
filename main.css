@@ -57,9 +57,9 @@ li a:hover
 }
 .container
 {
-    width: 100%;
+    width: 1600px;
     height: auto;
-    margin-top: 45px;
+    margin-top: 50px;
 }
 .main
 {
@@ -70,8 +70,8 @@ li a:hover
 }
 .right
 {
-    width: 28%;
-    margin-left: 2%;
+    width: 475px;
+    margin-left: 25px;
     height: auto;
     background-color: #0b2e13;
     float: left;
