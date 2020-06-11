@@ -8,6 +8,6 @@ $row = mysqli_fetch_array($result);
     echo $string;
     $txt[]=explode("",$string);
     foreach($txt as $var){
-        echo $var. '<Br>';
+        echo $var[0]. '<Br>';
 }
 
