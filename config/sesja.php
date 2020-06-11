@@ -3,7 +3,7 @@ session_start();
 
     $config=require('config.php');
     global $conn;
-    $conn = new mysqli($config->host, $config->username, $config->pass, $config->database);
+    $conn = new mysqli($config->host, $config->username, $config->pass);
 
 
 ini_set('display_errors', 1);
@@ -35,10 +35,11 @@ function getHP($nick,$conn)
 {
     $sql = 'select health from items.mpdb_health_food_air where player_name = "' . $nick . '"';
     $result = mysqli_query($conn, $sql);
-    $row = mysqli_fetch_array($result);
+    $row = mysqli_fetch_row($result);
 
     return $row['health'];
 }
+getHP("enes",$conn);
 function getFood($nick,$conn){
         $sql='select food from items.mpdb_health_food_air where player_name = "'.$nick.'"';
         $result = mysqli_query($conn, $sql);

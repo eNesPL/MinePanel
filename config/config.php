@@ -1,8 +1,7 @@
 <?php
 return (object) array(
     'host' => 'localhost',
-    'username' => 'authme',
-    'pass' => 'authme',
-    'database' => 'authme'
+    'username' => 'api ',
+    'pass' => 'Osiemznakow00'
 );
 ?>
