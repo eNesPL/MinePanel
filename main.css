@@ -27,7 +27,7 @@ body
     color: #202020;
     position: sticky;
     top: 0;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 ol
 {
@@ -40,7 +40,7 @@ ol
 li
 {
     width: 15%;
-    margin: 0 28px;
+    margin: 0 15px;
     float: left;
     text-align: center;
 }
@@ -64,8 +64,9 @@ li a:hover
 .main
 {
     width: 70%;
-    height: 1200px;
-    background-color: #0056b3;
+    height: auto;
+    background-color: #aaaaaa;
+    border-radius: 7px;
     float: left;
 }
 .right
@@ -73,16 +74,15 @@ li a:hover
     width: 25%;
     margin-left: 5%;
     height: auto;
-    background-color: #0b2e13;
     float: left;
 }
 .logowanie
 {
-    margin: 35px auto;
+    margin: 35px auto 60px;
     width: 85%;
-    height: 300px;
-    background-color: #d1ecf1;
-    border-radius: 5px;
+    height: auto;
+    background-color: #aaaaaa;
+    border-radius: 7px;
 }
 .input
 {
