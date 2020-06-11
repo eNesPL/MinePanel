@@ -86,9 +86,9 @@ include("./config/sesja.php");
                     <div class="pozrank"><?php echo $nick['realname'] ?></div>
                 <?php
                 }
-                if(sizeof($arr)==0){?>
-                    <div class="pozrank">Brak</div>
-                <?}
+                if(sizeof($arr)==0){
+                    echo '<div class="pozrank">Brak</div>';
+                }
                 ?>
             </div>
             <div style="clear: both"></div>
