@@ -57,12 +57,14 @@ include("./config/sesja.php");
             ';}?>
             <?php
             if(isset($_SESSION['login']) && $_SESSION['loged']=1){
-                echo "Witaj ".$_SESSION['login'];
-                echo ' <form action="config/login.php" method="post">
+                ?>
+                    Witaj <? echo getName()?>
+                    Ostatnio online: <? echo getLastLogin(getName(),$conn);?>
+                    <form action="config/login.php" method="post">
                     <input class="input" type="submit" name="action" value="Wyloguj"><br/>
                     </form>
 
-';
+<?
                 }
                 ?>
             </div>

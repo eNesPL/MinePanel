@@ -25,7 +25,7 @@ function getLastLogin($nick,$conn){
     $wynik = date('d/m/Y H:i',$row["lastlogin"]);
     return $wynik;
 }
-getLastLogin("enes",$conn);
+
 
 function getName(){
     return $_SESSION['login'];
