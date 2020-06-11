@@ -79,7 +79,7 @@ include("./config/sesja.php");
                 <?php
                 $arr = getOnline($conn);
                 foreach($arr as $nick){?>
-                    <div class="pozrank"><?php echo $nick['username'] ?></div>
+                    <div class="pozrank"><?php echo $nick['realname'] ?></div>
                 <?php
                 }
                 ?>
