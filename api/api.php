@@ -5,6 +5,8 @@ function getOnline(){
     if (isset($conn)) {
         $result = mysqli_query($conn, $sql);
         return mysqli_fetch_array($result);
+    }else{
+        echo 'rrr';
     }
 }
 echo getOnline();

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="eNes" preserveTimestamps="false" showDifferentInSync="false">
+  <component name="PublishConfigData" preserveTimestamps="false" showDifferentInSync="false">
     <serverData>
-      <paths name="eNes">
+      <paths name="e-nes.pl">
         <serverdata>
           <mappings>
-            <mapping deploy="/minepanel" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
