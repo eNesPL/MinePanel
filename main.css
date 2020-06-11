@@ -63,14 +63,14 @@ li a:hover
 }
 .main
 {
-    width: 70%;
+    width: 20%;
     height: 1200px;
     background-color: #0056b3;
     float: left;
 }
 .right
 {
-    width: 30%;
+    width: 10%;
     height: auto;
     background-color: #0b2e13;
     float: left;
