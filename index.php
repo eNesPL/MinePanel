@@ -41,23 +41,25 @@
             <div class="logowanie">
                 <?php
                 if(!isset($_SESSION['loged']) || $_SESSION['loged']=0 || $_SESSION['login']==""){
-                ?>
+                echo '
                 <form action="config/login.php" method="post">
                 <input class="input" type="text" name="username" placeholder="Login"><br/>
                 <input class="input" type="password" name="password" placeholder="Hasło"><br/>
                 <input class="input" type="submit" name="action" value="Zaloguj"><br/>
                 </form>
                 <div class="txt"><a href="#">Zapomniałeś hasła ?</a></div>
-                <?}?>
-                <?
-                if(isset($_SESSION['login']) && $_SESSION['loged']=1){
+          
+            ';}?>
+            <?php
+            if(isset($_SESSION['login']) && $_SESSION['loged']=1){
                 echo "Witaj ".$_SESSION['login'];
-                ?>
-                <form action="config/login.php" method="post">
+                echo ' <form action="config/login.php" method="post">
                     <input class="input" type="submit" name="action" value="Wyloguj"><br/>
                     </form>
 
-            <?}?>
+';
+                }
+                ?>
             </div>
             <div class="ranking">
                 <div class="rankighead"><h1>Top 5 Graczy</h1></div>
