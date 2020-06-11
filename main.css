@@ -6,8 +6,8 @@ body
 }
 .wrapper
 {
-    width: 1900px;
-    height: 1080px;
+    width: 1600px;
+    height: 900px;
 }
 .logo
 {
@@ -23,8 +23,8 @@ body
     height: auto;
     padding: 4px 3px;
     margin: 7px auto;
-    background-color: #404040;
-    color: #dddddd;
+    background-color: #dddddd;
+    color: #202020;
     position: sticky;
     top: 0;
     border-radius: 3px;
@@ -46,12 +46,12 @@ li
 }
 li a
 {
-    color: #dddddd;
+    color: #202020;
     text-decoration: none;
 }
 li a:hover
 {
-    color: #dddddd;
+    color: #202020;
     font-weight: bold;
     text-decoration: none;
 }
