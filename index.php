@@ -27,7 +27,7 @@ include("./config/sesja.php");
         </ol>
         <div style="clear: both"></div>
     </div>
-    <div class="container">
+    <div class="kontener">
         <div class="main">
             <div class="article">
                 <div class="img">Tytuł</div>
