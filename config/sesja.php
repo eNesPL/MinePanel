@@ -31,4 +31,26 @@ function getName(){
     return $_SESSION['login'];
 }
 
+function getHP($nick,$conn)
+{
+    $sql = 'select health from items.mpdb_health_food_air where player_name = "' . $nick . '"';
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_array($result);
+
+    return $row['health'];
+}
+function getFood($nick,$conn){
+        $sql='select food from items.mpdb_health_food_air where player_name = "'.$nick.'"';
+        $result = mysqli_query($conn, $sql);
+        $row = mysqli_fetch_array($result);
+
+        return $row['food'];
+}
+function getXP($nick,$conn){
+    $sql='select exp_lvl from items.mpdb_experience where player_name = "'.$nick.'"';
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_array($result);
+
+    return $row['exp_lvl'];
+}
 ?>
