@@ -12,7 +12,9 @@ function getOnline($conn){
         return $result;
 }
 $arr = getOnline($conn);
-
+foreach($arr as $nick){
+    echo 'username: '.$nick['username']."<br>";
+}
 ?>
 <html>
 
