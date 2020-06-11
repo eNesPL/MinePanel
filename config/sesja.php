@@ -3,7 +3,7 @@ session_start();
 
     $config=require('config.php');
     global $conn;
-    $conn = new mysqli($config->host, $config->username, $config->pass,"");
+    $conn = new mysqli($config->host, $config->username, $config->pass);
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
