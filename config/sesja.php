@@ -22,7 +22,7 @@ function getLastLogin($nick,$conn){
     $sql='select lastlogin from authme.authme where username = "'.$nick.'"';
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_array($result);
-    $wynik = date('d/m/Y H:i',$row["lastlogin"]);
+    $wynik = date('d/m/Y H:i',substr($row["lastlogin"],0,10));
     return $wynik;
 }
 
