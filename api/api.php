@@ -8,7 +8,10 @@ function getOnline($conn){
         echo $result;
         return mysqli_fetch_array($result);
 }
-echo getOnline($conn);
+$arr = getOnline($conn);
+foreach($arr as $nick){
+    echo $nick['username'];
+}
 ?>
 <html>
 
