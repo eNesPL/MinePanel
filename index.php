@@ -73,11 +73,11 @@ include("./config/sesja.php");
             </div>
             <div class="ranking">
                 <div class="rankighead"><h1>Top 5 Graczy</h1></div>
-                <div class="pozrank">Test11</div>
-                <div class="pozrank">Test21</div>
-                <div class="pozrank">Test31</div>
-                <div class="pozrank">Test41</div>
-                <div class="pozrank">Test51</div>
+                <div class="pozrank">Test112</div>
+                <div class="pozrank">Test212</div>
+                <div class="pozrank">Test312</div>
+                <div class="pozrank">Test412</div>
+                <div class="pozrank">Test512</div>
             </div>
             <div class="ranking">
                 <div class="rankighead"><h1>Gracze online</h1></div>
