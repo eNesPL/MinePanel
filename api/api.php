@@ -14,7 +14,7 @@ function getOnline($conn){
 }
 $arr = getOnline($conn);
 foreach($arr as $nick){
-    echo $nick['username'];
+    echo $nick;
 }
 ?>
 <html>
