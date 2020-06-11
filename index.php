@@ -18,16 +18,17 @@ include("./config/sesja.php");
     <div class="logo">
         <a href="index.php"><img src="img/logo.png" alt="Logo"></a>
     </div>
-    <div class="nav">
+    <div class="menu">
         <ol>
             <li><a href="#">Nowości</a></li>
             <li><a href="#">Panel Gracza</a></li>
             <li><a href="#">Receptury</a></li>
+            <li><a href="#">O nas</a></li>
             <li><a href="#">Kontakt</a></li>
         </ol>
-        <div style="clear: both"></div>
     </div>
-    <div class="container">
+</div>
+    <div class="kontener">
         <div class="main">
             <div class="article">
                 <div class="img">Tytuł</div>
@@ -88,6 +89,6 @@ include("./config/sesja.php");
         </div>
         <div style="clear: both"></div>
     </div>
-</div>
+
 </body>
 </html>
