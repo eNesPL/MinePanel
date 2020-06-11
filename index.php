@@ -48,7 +48,8 @@
                 <input class="input" type="submit" name="action" value="Zaloguj"><br/>
                 </form>
                 <div class="txt"><a href="#">Zapomniałeś hasła ?</a></div>
-                <?;}elseif(isset($_SESSION['login']) && $_SESSION['loged']=1){
+                <?;}
+                if(isset($_SESSION['login']) && $_SESSION['loged']=1){
                 echo "Witaj ".$_SESSION['login'];
                 ?>
                 <form action="config/login.php" method="post">
