@@ -21,8 +21,7 @@ function getLastLogin($nick,$conn){
 
     $sql='select lastlogin from authme.authme where username = ';
     $result = mysqli_query($conn, $sql);
-    $row = mysqli_fetch_array($result);
-    $wynik = date($row[0]);
+    $wynik = date($result);
     echo $wynik;
     return $wynik;
 }
