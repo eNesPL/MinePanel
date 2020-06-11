@@ -73,9 +73,8 @@
                 <div class="rankighead"><h1>Gracze onlie</h1></div>
                 <?
                 $arr = getOnline($conn);
-                foreach($arr as $nick){
-                    ?>
-                    <div class="pozrank"><?$nick['username']?>></div>
+                foreach($arr as $nick){?>
+                    <div class="pozrank"><?echo $nick['username']?></div>
                 <?
                 }
                 ?>
