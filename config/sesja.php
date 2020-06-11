@@ -37,20 +37,20 @@ function getHP($nick,$conn)
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_array($result);
 
-    return $row['health'];
+    return $result['health'];
 }
 function getFood($nick,$conn){
         $sql='select food from items.mpdb_health_food_air where player_name = "'.$nick.'"';
         $result = mysqli_query($conn, $sql);
         $row = mysqli_fetch_array($result);
 
-        return $row['food'];
+        return $result['food'];
 }
 function getXP($nick,$conn){
     $sql='select exp_lvl from items.mpdb_experience where player_name = "'.$nick.'"';
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_array($result);
 
-    return $row['exp_lvl'];
+    return $result['exp_lvl'];
 }
 ?>
