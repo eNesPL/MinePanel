@@ -30,7 +30,8 @@ include("./config/sesja.php");
     <div class="kontener">
         <div class="main">
             <div class="article">
-                <div class="img"><img src="img/test.jpg"></div>
+                <div class="img">Tytuł</div>
+                <div id="text">Text</div>
             </div>
             <div class="article">
                 <div class="img">Tytuł</div>
