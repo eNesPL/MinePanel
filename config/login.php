@@ -1,4 +1,6 @@
-<?php include("./config/sesja.php"); ?>
+<?php include("./config/sesja.php");
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +30,6 @@ if ($action && $user && $pass) {
             $conn = new mysqli($config->host, $config->username, $config->pass, $config->database);
             $result = mysqli_query($conn, $sql);
             $row = mysqli_fetch_array($result);
-            echo $row['realname'];
             $_SESSION['login']=$row['realname'];
             $_SESSION['loged']=1;
         }
@@ -48,7 +49,7 @@ if (!$was_successful) {
     session_destroy();
 
 }
-//header('Location: ' . $_SERVER['HTTP_REFERER']);
+header('Location: ' . $_SERVER['HTTP_REFERER']);
 exit();
 function get_from_post_or_empty($index_name) {
     return trim(
