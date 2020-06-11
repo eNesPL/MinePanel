@@ -41,7 +41,7 @@
             <div class="logowanie">
                 <?php
                 if(!isset($_SESSION['loged']) || $_SESSION['loged']=0 || $_SESSION['login']==""){
-                ?>
+                echo '
                 <form action="config/login.php" method="post">
                 <input class="input" type="text" name="username" placeholder="Login"><br/>
                 <input class="input" type="password" name="password" placeholder="Hasło"><br/>
@@ -49,7 +49,7 @@
                 </form>
                 <div class="txt"><a href="#">Zapomniałeś hasła ?</a></div>
           
-            <?}?>
+            ';}?>
             <?php
             if(isset($_SESSION['login']) && $_SESSION['loged']=1){
                 echo "Witaj ".$_SESSION['login'];
