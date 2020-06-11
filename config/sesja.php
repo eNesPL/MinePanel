@@ -35,7 +35,7 @@ function getHP($nick,$conn)
 {
     $sql = 'select health from items.mpdb_health_food_air where player_name = "' . $nick . '"';
     $result = mysqli_query($conn, $sql);
-    $row = mysqli_fetch_array($result);
+    $row = mysqli_fetch_row($result);
 
     return $row['health'];
 }
