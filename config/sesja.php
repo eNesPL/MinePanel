@@ -23,7 +23,13 @@ function getLastLogin($nick,$conn){
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_array($result);
     $wynik = date($row[0]);
+    echo $wynik;
     return $wynik;
+}
+getLastLogin("enes",$conn);
+
+function getName(){
+    return $_SESSION['login'];
 }
 
 ?>
