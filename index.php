@@ -75,7 +75,7 @@ include("./config/sesja.php");
                 <div class="pozrank">Test51</div>
             </div>
             <div class="ranking">
-                <div class="rankighead"><h1>Gracze onlie</h1></div>
+                <div class="rankighead"><h1>Gracze online</h1></div>
                 <?php
                 $arr = getOnline($conn);
                 foreach($arr as $nick){?>
