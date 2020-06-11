@@ -11,3 +11,4 @@ function getOnline(){
         echo"error";
     }
 }
+getOnline();
