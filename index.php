@@ -80,16 +80,7 @@ include("./config/sesja.php");
             </div>
             <div class="ranking">
                 <div class="rankighead"><h1>Gracze online</h1></div>
-                <?php
-                $arr = getOnline($conn);
-                foreach($arr as $nick){?>
-                    <div class="pozrank"><?php echo $nick['realname'] ?></div>
-                <?php
-                }
-                if(empty($arr)){
-                    echo '<div class="pozrank">Brak</div>';
-                }
-                ?>
+                    <div class="pozrank"><?php echo getOnline($conn); ?></div>
             </div>
             <div style="clear: both"></div>
         </div>

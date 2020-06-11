@@ -11,7 +11,7 @@ error_reporting(E_ALL);
 
 function getOnline($conn){
 
-    $sql='select realname from authme.authme where isLogged = 1';
+    $sql='count (select realname from authme.authme where isLogged = 1)';
 
     $result = mysqli_query($conn, $sql);
     return $result;
