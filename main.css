@@ -20,10 +20,10 @@ body
 }
 .menu
 {
-    width: 90%;
+    width: 80%;
     height: auto;
     padding: 7px 5px;
-    background-color: #aaaaaa;
+    background-color: #cccccc;
     color: #202020;
     position: sticky;
     top: 0;
@@ -57,22 +57,22 @@ li a:hover
 }
 .kontener
 {
-    width: 90%;
+    width: 80%;
     height: auto;
     margin-top: 50px;
 }
 .main
 {
-    width: 70%;
+    width: 73%;
     height: auto;
-    background-color: #aaaaaa;
+    background-color: #cccccc;
     border-radius: 7px;
     float: left;
 }
 .right
 {
     width: 25%;
-    margin-left: 5%;
+    margin-left: 2%;
     height: auto;
     float: left;
 }
@@ -81,7 +81,7 @@ li a:hover
     margin: 35px auto 60px;
     width: 85%;
     height: auto;
-    background-color: #aaaaaa;
+    background-color: #cccccc;
     border-radius: 7px;
 }
 .input
@@ -106,7 +106,7 @@ li a:hover
     margin: 50px auto;
     width: 85%;
     height: auto;
-    background-color: #d1ecf1;
+    background-color: #cccccc;
     border-radius: 5px;
     display: block;
 }
@@ -132,7 +132,7 @@ li a:hover
     margin: 45px auto;
     width: 80%;
     height: 400px;
-    background-color: white;
+    background-color: yellow;
 }
 .img
 {
