@@ -60,18 +60,17 @@ li a:hover
     width: 1600px;
     height: auto;
     margin-top: 50px;
-    box-sizing: border-box;
 }
 .main
 {
-    width: 100%;
+    width: 1000px;
     height: 1200px;
     background-color: #0056b3;
     float: left;
 }
 .right
 {
-    width: 40%;
+    width: 400px;
     height: auto;
     background-color: #0b2e13;
     float: left;
