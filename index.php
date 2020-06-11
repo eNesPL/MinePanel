@@ -18,7 +18,7 @@ include("./config/sesja.php");
     <div class="logo">
         <a href="index.php"><img src="img/logo.png" alt="Logo"></a>
     </div>
-    <div class="nav">
+    <div class="menu">
         <ol>
             <li><a href="#">Nowości</a></li>
             <li><a href="#">Panel Gracza</a></li>
@@ -27,7 +27,7 @@ include("./config/sesja.php");
         </ol>
         <div style="clear: both"></div>
     </div>
-    <div class="container">
+    <div class="kontener">
         <div class="main">
             <div class="article">
                 <div class="img">Tytuł</div>
