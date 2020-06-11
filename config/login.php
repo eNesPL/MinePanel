@@ -1,4 +1,4 @@
-<?php session_start();?>
+<?php include("./config/sesja.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +37,7 @@ if (!$was_successful) {
     session_destroy();
 
 }
-header('Location: ' . $_SERVER['HTTP_REFERER']);
+//header('Location: ' . $_SERVER['HTTP_REFERER']);
 exit();
 function get_from_post_or_empty($index_name) {
     return trim(
@@ -51,9 +51,11 @@ function process_login($user, $pass, AuthMeController $controller) {
     if ($controller->checkPassword($user, $pass)) {
         $config=require('config.php');
         $sql='select realname from authme.authme where username = '.$user;
+
         $conn = new mysqli($config->host, $config->username, $config->pass, $config->database);
         $result = mysqli_query($conn, $sql);
         $row = mysqli_fetch_array($result);
+
         $_SESSION['login']=$row['realname'];
         $_SESSION['loged']=1;
         return true;
