@@ -53,8 +53,8 @@ function process_login($user, $pass, AuthMeController $controller) {
         $sql='select realname from authme.authme where username = $user';
         $conn = new mysqli($config->host, $config->username, $config->pass, $config->database);
         $result = mysqli_query($conn, $sql);
-        $row = mysqli_fetch_row($result);
-        $_SESSION['login']=$row[0];
+        $row = mysqli_fetch_array($result);
+        $_SESSION['login']=$row['realname'];
         $_SESSION['loged']=1;
         return true;
     } else {
