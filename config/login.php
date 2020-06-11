@@ -1,4 +1,6 @@
-<?php session_start();?>
+<?php include("./config/sesja.php");
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,6 +23,16 @@ $was_successful = false;
 if ($action && $user && $pass) {
     if ($action === 'Zaloguj') {
         $was_successful = process_login($user, $pass, $authme_controller);
+        if($was_successful){
+            $config=require('config.php');
+            $sql='select realname from authme.authme where username = "'.$user.'"';
+            echo $sql;
+            $conn = new mysqli($config->host, $config->username, $config->pass, $config->database);
+            $result = mysqli_query($conn, $sql);
+            $row = mysqli_fetch_array($result);
+            $_SESSION['login']=$row['realname'];
+            $_SESSION['loged']=1;
+        }
     }
 }
 if($action === "Wyloguj"){
@@ -49,8 +61,6 @@ function get_from_post_or_empty($index_name) {
 // Login logic
 function process_login($user, $pass, AuthMeController $controller) {
     if ($controller->checkPassword($user, $pass)) {
-        $_SESSION['login']=$user;
-        $_SESSION['loged']=1;
         return true;
     } else {
         $_SESSION['error'] = 'Logowanie nie udane';

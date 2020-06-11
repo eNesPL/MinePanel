@@ -17,5 +17,18 @@ function getOnline($conn){
     $result = mysqli_query($conn, $sql);
     return $result;
 }
+function getLastLogin($nick,$conn){
+
+    $sql='select lastlogin from authme.authme where username = "'.$nick.'"';
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_array($result);
+    $wynik = date('d/m/Y H:i',$row["lastlogin"]);
+    return $wynik;
+}
+getLastLogin("enes",$conn);
+
+function getName(){
+    return $_SESSION['login'];
+}
 
 ?>
