@@ -51,7 +51,7 @@ function process_login($user, $pass, AuthMeController $controller) {
     if ($controller->checkPassword($user, $pass)) {
         $config=require('config.php');
         $sql='select realname from authme.authme where username = '.$user;
-
+        echo $sql;
         $conn = new mysqli($config->host, $config->username, $config->pass, $config->database);
         $result = mysqli_query($conn, $sql);
         $row = mysqli_fetch_array($result);
