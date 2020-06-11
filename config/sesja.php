@@ -34,7 +34,7 @@ function getName(){
 function getHP($nick,$conn)
 {
     $sql = 'select health from items.mpdb_health_food_air where player_name = "' . $nick . '"';
-    $result = mysqli_query($conn, $sql) or die('SQL Error :: '.mysqli_error($conn));
+    $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_row($result);
 
     return $row['health'];
@@ -42,7 +42,7 @@ function getHP($nick,$conn)
 getHP("enes",$conn);
 function getFood($nick,$conn){
         $sql='select food from items.mpdb_health_food_air where player_name = "'.$nick.'"';
-        $result = mysqli_query($conn, $sql) or die('SQL Error :: '.mysqli_error($conn));
+        $result = mysqli_query($conn, $sql);
         $row = mysqli_fetch_array($result);
 
         return $row['food'];
