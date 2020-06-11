@@ -49,7 +49,12 @@ function get_from_post_or_empty($index_name) {
 // Login logic
 function process_login($user, $pass, AuthMeController $controller) {
     if ($controller->checkPassword($user, $pass)) {
-        $_SESSION['login']=$user;
+        $config=require('config.php');
+        $sql='select realname from authme.authme where username = $user';
+        $conn = new mysqli($config->host, $config->username, $config->pass, $config->database);
+        $result = mysqli_query($conn, $sql);
+        $row = mysqli_fetch_row($result);
+        $_SESSION['login']=$row[0];
         $_SESSION['loged']=1;
         return true;
     } else {
